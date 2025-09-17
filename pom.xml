@@ -7,8 +7,8 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.15</version> <!-- You can upgrade to 3.x if using Java 17+ -->
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>2.7.15</version> <!-- Use 3.x if on Java 17+ -->
+        <relativePath/>
     </parent>
 
     <groupId>com.example</groupId>
@@ -17,20 +17,20 @@
     <packaging>jar</packaging>
 
     <name>selenium-demo</name>
-    <description>Demo Spring Boot + Selenium project</description>
+    <description>Spring Boot + Selenium Demo</description>
 
     <properties>
         <java.version>1.8</java.version>
     </properties>
 
     <dependencies>
-        <!-- Spring Boot Web Starter (includes Spring MVC + Jackson + Tomcat) -->
+        <!-- Spring Boot Web Starter (includes Spring, MVC, Tomcat) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- Servlet API (needed for HttpServlet, HttpServletRequest, etc.) -->
+        <!-- Servlet API (needed for HttpServlet, etc.) -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -38,7 +38,7 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Selenium (if you’re using Selenium for testing) -->
+        <!-- Selenium for testing -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
@@ -55,7 +55,7 @@
 
     <build>
         <plugins>
-            <!-- Spring Boot Maven Plugin (for packaging & running) -->
+            <!-- Spring Boot Plugin -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
